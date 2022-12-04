@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main.component'; 
 import { AboutComponent } from './pages/dash/about/about.component';
 import { DashComponent } from './pages/dash/dash.component';
+import { VisualizationComponent } from './pages/visualization/visualization.component';
 
 const routes: Routes = [  
   { path: '', 
@@ -11,6 +12,7 @@ const routes: Routes = [
       {path:'', redirectTo: 'dashboard', pathMatch: 'full'},
       {path:'dashboard', component: DashComponent},
       {path:'about', component: AboutComponent},
+      {path:'visualization', component: VisualizationComponent}
     ]
 }, 
  

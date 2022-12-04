@@ -22,10 +22,27 @@ class task(viewsets.ModelViewSet):
         return JsonResponse({'count': Task.objects.count()})
     
     @action(detail=False, methods=['POST'], name='create a task under a project')
-    def create_task(self, project_id, name, description, detection_model, data_type):
+    def create_task(self, request):
+        # project_id, name, description, detection_model, data_type
+        project_id = request.data['project_id']
+        name = request.data['name']
+        description = request.data['description']
+        detection_model = request.data['detection_model']
+        data_type = request.data['data_type']
+
         project = Project.objects.get(id=project_id)
         task = Task.objects.create(project=project, name=name, description=description, detection_model=detection_model, data_type=data_type)
         return JsonResponse({'task_id': task.id})
+        
+    @action(detail=False, methods=['GET'], name='get all tasks under a project')
+    def get_tasks(self, request):
+        project_id=int(request.GET.get("project_id"))
+        project = Project.objects.get(id=project_id)
+        
+        tasks = Task.objects.filter(project=project).all()
+        serializer = TaskSerializer(tasks, many=True)
+        return JsonResponse(serializer.data, safe=False)
+       
 
 class project(viewsets.ModelViewSet):
     queryset = Project.objects.all()

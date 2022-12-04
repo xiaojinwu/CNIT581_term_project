@@ -11,8 +11,8 @@ class Task(models.Model):
     completed = models.BooleanField(default=False)
     detection_model = models.CharField(max_length=50)
     data_type = models.CharField(max_length=50) 
-    project=models.ForeignKey('Project', on_delete=models.CASCADE,  related_name='parent_project')
-    results = models.ManyToManyField('Result', related_name='results')
+    project=models.ForeignKey('Project', on_delete=models.CASCADE,  related_name='parent_project',null=True, blank=True)
+    results = models.ManyToManyField('Result', related_name='results',null=True, blank=True)
  
 
     def __str__(self):
