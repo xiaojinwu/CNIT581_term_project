@@ -1,0 +1,24 @@
+<mat-toolbar>
+ 
+   <span>Easy Detection</span>
+   <section>
+     
+    <div class="example-button-row">
+    
+      <a mat-button color="primary" routerLink="/main/dashboard">Dashboard</a>
+      <a mat-button color="primary" routerLink="/main/about" >About</a>
+  
+    
+    </div>
+  </section>
+   <!--Nav buttons -->  
+   <span class="spacer"></span>
+   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+     Me
+   </button>
+   <button mat-icon-button class="example-icon" (click)="logout()" aria-label="Example icon-button with share icon" >
+   Logout
+  </button>
+ </mat-toolbar>
+ <!-- change sub page here -->
+    <router-outlet></router-outlet> 

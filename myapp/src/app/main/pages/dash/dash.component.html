@@ -1,0 +1,96 @@
+<!-- info card -->
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Summary</h1>
+    </mat-card-title>
+  </mat-card-header>
+<mat-grid-list cols="4" rowHeight="4:1">
+   
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Number of Task</mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="text-align: center ">
+          <p>{{getCount()}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Number of Completed Task</mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="text-align: center ">
+          <p>{{getCompletedCount()}}</p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <!-- weather card -->
+      <mat-card class="example-card">
+        <mat-card-header>
+          <mat-card-title>Weather</mat-card-title>
+        </mat-card-header>
+        <mat-card-content style="text-align: center ">
+          <p> </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <mat-divider></mat-divider>
+
+</mat-card>
+
+<mat-card>
+    <!-- card header -->
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Task List</h1>
+      </mat-card-title>
+ 
+    </mat-card-header>
+    <mat-card-actions align="end" >
+      <button mat-button  (click)="createTask()" >Create a New Task</button> 
+    </mat-card-actions>
+    <!-- card content -->
+    <mat-card-content>
+
+  
+  <mat-grid-list cols="4" rowHeight="5:3" >
+ 
+      <mat-grid-tile *ngFor="let t of tasks"> 
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title>
+              <h1>{{t.name}}</h1>
+              <mat-chip-list aria-label="Fish selection">
+             
+                <mat-chip color="primary" selected>{{t.completed?"Finished":"Unfinished"}}</mat-chip>
+                <mat-chip color="accent" selected>{{t.detection_model}}</mat-chip>
+              </mat-chip-list>
+            </mat-card-title>
+            
+          </mat-card-header>
+          <!-- subh -->
+          <mat-card-content>
+            <p class="description">{{t.description}}</p>
+          </mat-card-content>
+          <mat-card-actions align="end">
+            <button mat-button (click)="editTask(t)">Edit</button> 
+            <button mat-button color="warn" (click)="delete(t.id)">delete</button> 
+          </mat-card-actions>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-fab color="warn" (click)="createTask()" >
+          <mat-icon>add</mat-icon>
+        </button>
+      </mat-grid-tile>
+ 
+    </mat-grid-list>
+   
+  </mat-card-content>
+  </mat-card>

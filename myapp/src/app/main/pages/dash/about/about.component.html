@@ -1,0 +1,30 @@
+<!-- about this project -->
+<!-- with Material desgin    -->
+
+<mat-card  style="max-width: 80%; margin:auto;margin-top: 10px;">
+    <mat-card-subtitle>Author: Jinwu Xiao</mat-card-subtitle>
+    <mat-card-title>CNIT 581 -PROJECT </mat-card-title>
+    <mat-card-content>
+      <p>With the development of artificial intelligence, there are more and more engineering projects that use object detection algorithms. At the same time, different research teams have come up with their own research algorithms for users to use. However, for users to use object detection algorithms, they usually need to configure complex runtime environments. The user will use the command line and other complex ways to operate. In addition, when we use target detection algorithms to detect targets, the results are usually saved in the form of target frame images, but for engineering projects, it is difficult for users to effectively manage and utilize the predicted results. Sometimes users also want to exclude some unreliable results. Therefore, building an effective application platform for object detection algorithms can effectively provide a convenient way for such users to use neural network models and to manage and share the results more effectively</p>
+ 
+    </mat-card-content>
+    <mat-divider inset></mat-divider>
+    <p>
+•	Cumbersome testing process for inspectors <br>
+•	Unsuitable models for inspection of specialty-specific targets<br>
+•	High cost of custom models<br>
+•	Research model value reuse<br>
+•	Lack of scalability of model results analysis<br>
+For the current problem, we will reclassify and arrange the complicated operations of the user into a new task process, which is convenient for the user to deal with the problem clearly and obtain the result. At the same time, the system also retains a certain custom configuration to meet the user's additional needs for precision.
+
+    </p>
+    <mat-divider inset></mat-divider>
+    <h3>Solution</h3>
+    <p>
+        this task detail’s view, there is a return button on the left, and the middle part is the name of the task, the creator, the creation time and the execution status of the current task. There is a description of the task on the right, which is convenient for users to understand the basic content of the current task. Below is the data view of the task. When each training task is completed, the detection results will be sorted into the track view below. On the left of the track view is a player for playing image sequences or videos, and on the right is a player for playing image sequences or videos. multiple tracks. Each track corresponds to a different target type, and if a corresponding target is detected, a new block will be created at the corresponding time point of the track. When multiple target objects are detected in a frame, multiple stacked squares are created to represent the detected objects. There is a progress bar above the track to adjust the user's viewing progress by dragging the control.
+        <img src="assets/test.png" alt="test" width="50%" height="100%">
+        </p>
+ 
+    <mat-card-footer> 
+    </mat-card-footer>
+  </mat-card>
