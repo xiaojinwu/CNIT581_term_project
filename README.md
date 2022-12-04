@@ -202,7 +202,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the CNIT581 License. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,9 +211,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Jinwu Xiao - [xiao270@purdue.com](xiao270@purdue.com)
+Hang Li - [li4016@purdue.com](li4016@purdue.com)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github.com/xiaojinwu/CNIT581_term_project)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
