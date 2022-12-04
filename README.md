@@ -120,16 +120,27 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
+This is instructions for how to set up the project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+#### Backend
+* Create a virtual Environment with python 3.9 in Anaconda.
 * npm
   ```sh
-  npm install npm@latest -g
+  pip install djangorestframework django-cors-headers
   ```
+* run server side
+  ```sh
+  pip python ./manage.py runserver
+  ```
+
+#### Myapp
+1. install node.js https://nodejs.org/en/
+2. install Yarn(Package Manager): https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
+3. restore the libs: Execute  yarn command in terminal. 
+4. start App: Execute yarn start
 
 ### Installation
 
@@ -155,6 +166,10 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+Url for server: http://127.0.0.1:8000
+Api of task: http://127.0.0.1:8000/myapp/task/
+
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
