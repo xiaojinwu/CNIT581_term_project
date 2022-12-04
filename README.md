@@ -212,6 +212,7 @@ Distributed under the CNIT581 License.
 ## Contact
 
 Jinwu Xiao - [xiao270@purdue.com](xiao270@purdue.com)
+
 Hang Li - [li4016@purdue.com](li4016@purdue.com)
 
 Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github.com/xiaojinwu/CNIT581_term_project)
@@ -221,18 +222,12 @@ Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## References
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Angular](https://angular.io/)
+* [Material Design](https://m3.material.io/)
+* [Angular Material](https://material.angular.io/)
+* [Django REST framework](https://www.django-rest-framework.org/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
