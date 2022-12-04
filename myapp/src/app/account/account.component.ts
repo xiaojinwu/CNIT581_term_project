@@ -14,7 +14,7 @@ export class AccountComponent implements OnInit {
   constructor(public http:HttpClient, public router : Router ) { }
 
   ngOnInit(): void {
-    this.model.username = "xiao270";
+    this.model.username = "jinwu";
     this.model.password = "qwe123";
   }
 

@@ -9,7 +9,7 @@
 <mat-grid-list cols="4" rowHeight="4:1">
    
     <mat-grid-tile>
-      <mat-card class="example-card">
+      <mat-card class=" ">
         <mat-card-header>
           <mat-card-title>Number of Task</mat-card-title>
         </mat-card-header>
@@ -19,7 +19,7 @@
       </mat-card>
     </mat-grid-tile>
     <mat-grid-tile>
-      <mat-card class="example-card">
+      <mat-card class=" ">
         <mat-card-header>
           <mat-card-title>Number of Completed Task</mat-card-title>
         </mat-card-header>
@@ -30,7 +30,7 @@
     </mat-grid-tile>
     <mat-grid-tile>
       <!-- weather card -->
-      <mat-card class="example-card">
+      <mat-card class="">
         <mat-card-header>
           <mat-card-title>Weather</mat-card-title>
         </mat-card-header>
@@ -44,8 +44,66 @@
 
 </mat-card>
 
+<mat-grid-list cols="2" rowHeight="4:1">
+  <mat-grid-tile>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Project List</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions align="end" >
+        <button mat-button  (click)="createProject()" >Create a Project</button> 
+      </mat-card-actions>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let p of projects">
+          
+            <h4 mat-line>{{p.name}}</h4>
+            <p mat-line>{{p.description}}</p>
+            <mat-chip-list aria-label="developers">             
+              <mat-chip color="primary" selected *ngFor="let d of p.developers">{{filterUser(d).username}}</mat-chip>
+
+            </mat-chip-list>
+            <mat-action-list>
+              <button mat-button (click)="selectProject(p)" >SELECT</button>
+            <button mat-button (click)="deleteProject(p.id)" >DELETE</button>  
+            </mat-action-list>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Select Project Task List. Current :{{selected_proejct?selected_proejct.name:"None"}}</mat-card-title>
+
+      </mat-card-header>
+      <mat-card-actions align="end" >
+        <button mat-button  (click)="createTask()" >Create a New Task</button> 
+      </mat-card-actions>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let t of tasks">
+            <mat-icon mat-list-icon>check_box</mat-icon>
+            <h4 mat-line>{{t.name}}</h4> 
+            <mat-chip-list aria-label="Fish selection">             
+              <mat-chip color="primary" selected>{{t.completed?"Finished":"Unfinished"}}</mat-chip>
+              <mat-chip color="accent" selected>{{t.detection_model}}</mat-chip>
+            </mat-chip-list>
+            <p mat-line>{{t.description}}</p> 
+            <mat-action-list>
+              <button mat-button (click)="editTask(t)">Edit</button> 
+              <button mat-button color="warn" (click)="delete(t.id)">delete</button> 
+            </mat-action-list>
+     
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+<!-- 
 <mat-card>
-    <!-- card header -->
+   
     <mat-card-header>
       <mat-card-title>
         <h1>Task List</h1>
@@ -55,7 +113,7 @@
     <mat-card-actions align="end" >
       <button mat-button  (click)="createTask()" >Create a New Task</button> 
     </mat-card-actions>
-    <!-- card content -->
+    
     <mat-card-content>
 
   
@@ -66,15 +124,14 @@
           <mat-card-header>
             <mat-card-title>
               <h1>{{t.name}}</h1>
-              <mat-chip-list aria-label="Fish selection">
-             
+              <mat-chip-list aria-label="Fish selection">             
                 <mat-chip color="primary" selected>{{t.completed?"Finished":"Unfinished"}}</mat-chip>
                 <mat-chip color="accent" selected>{{t.detection_model}}</mat-chip>
               </mat-chip-list>
             </mat-card-title>
             
           </mat-card-header>
-          <!-- subh -->
+        
           <mat-card-content>
             <p class="description">{{t.description}}</p>
           </mat-card-content>
@@ -93,4 +150,4 @@
     </mat-grid-list>
    
   </mat-card-content>
-  </mat-card>
+  </mat-card> -->
