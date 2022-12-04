@@ -131,6 +131,17 @@
     "rxjs" "6.6.7"
     "source-map" "0.7.4"
 
+"@angular-devkit/core@15.0.2":
+  "integrity" "sha512-XkdNKyeYvnCq0zWuEda163muUV38ifNyK6EjrbhI5pQWNg7myxtDmLenjtpXLGLZwjxqsart2l/uoYsk1xQCmQ=="
+  "resolved" "https://registry.npmjs.org/@angular-devkit/core/-/core-15.0.2.tgz"
+  "version" "15.0.2"
+  dependencies:
+    "ajv" "8.11.0"
+    "ajv-formats" "2.1.1"
+    "jsonc-parser" "3.2.0"
+    "rxjs" "6.6.7"
+    "source-map" "0.7.4"
+
 "@angular-devkit/schematics@14.1.3":
   "integrity" "sha512-i1vuuClGvBzmgQi3qAUWTwLdnGJZ/C8xVeFMHXmgVNZhck9/8xGGusi500SYsGcVzEfetGSJt5hOfUHmVrcpbg=="
   "resolved" "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-14.1.3.tgz"
@@ -139,6 +150,17 @@
     "@angular-devkit/core" "14.1.3"
     "jsonc-parser" "3.1.0"
     "magic-string" "0.26.2"
+    "ora" "5.4.1"
+    "rxjs" "6.6.7"
+
+"@angular-devkit/schematics@15.0.2":
+  "integrity" "sha512-FqimOzQCwRGmz/NPPiK6QpAxI+qpy8rYQRlWRWSOfQgjb+cl4rD2isllalYvzO+5mmb88fwJ7bj9cP2X5khpcg=="
+  "resolved" "https://registry.npmjs.org/@angular-devkit/schematics/-/schematics-15.0.2.tgz"
+  "version" "15.0.2"
+  dependencies:
+    "@angular-devkit/core" "15.0.2"
+    "jsonc-parser" "3.2.0"
+    "magic-string" "0.26.7"
     "ora" "5.4.1"
     "rxjs" "6.6.7"
 
@@ -1458,6 +1480,15 @@
     "node-gyp" "^9.0.0"
     "read-package-json-fast" "^2.0.3"
     "which" "^2.0.2"
+
+"@schematics/angular@^15.0.2":
+  "integrity" "sha512-h5vTcOkJD0s+BMHRI87fVyKB+A/YqFolR7fhmhETTq2NwRg2oR0HTf7DbjVxPBwhvI5XzUV1MBPb30xXR2UG0w=="
+  "resolved" "https://registry.npmjs.org/@schematics/angular/-/angular-15.0.2.tgz"
+  "version" "15.0.2"
+  dependencies:
+    "@angular-devkit/core" "15.0.2"
+    "@angular-devkit/schematics" "15.0.2"
+    "jsonc-parser" "3.2.0"
 
 "@schematics/angular@14.1.3":
   "integrity" "sha512-hhH4MGfBD1oxrd9PFZwgaqXAT9dYTK/6AtoIcr40OwEbnS5ZoZwzrgb0OOT2NW3bmL0dg3YeJei3Sf89hlI5eg=="
@@ -3758,6 +3789,11 @@
   "resolved" "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.1.0.tgz"
   "version" "3.1.0"
 
+"jsonc-parser@3.2.0":
+  "integrity" "sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w=="
+  "resolved" "https://registry.npmjs.org/jsonc-parser/-/jsonc-parser-3.2.0.tgz"
+  "version" "3.2.0"
+
 "jsonfile@^4.0.0":
   "integrity" "sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg=="
   "resolved" "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz"
@@ -3955,6 +3991,13 @@
   "integrity" "sha512-NzzlXpclt5zAbmo6h6jNc8zl2gNRGHvmsZW4IvZhTC4W7k4OlLP+S5YLussa/r3ixNT66KOQfNORlXHSOy/X4A=="
   "resolved" "https://registry.npmjs.org/magic-string/-/magic-string-0.26.2.tgz"
   "version" "0.26.2"
+  dependencies:
+    "sourcemap-codec" "^1.4.8"
+
+"magic-string@0.26.7":
+  "integrity" "sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow=="
+  "resolved" "https://registry.npmjs.org/magic-string/-/magic-string-0.26.7.tgz"
+  "version" "0.26.7"
   dependencies:
     "sourcemap-codec" "^1.4.8"
 
