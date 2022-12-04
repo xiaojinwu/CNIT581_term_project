@@ -25,7 +25,6 @@
 <br />
 <div align="center">
 
-
   <h3 align="center">CNIT581 Web Development</h3>
 
   <p align="center">
@@ -80,6 +79,29 @@ The potential user groups are still the same users who need to use the visual al
 The website provides a good authorization login interface so that users can ensure the privacy of their data to a certain extent.
 
 
+<p align="center" >
+    Login
+</p>
+<div align="center">
+  <img src="img/img1.png">
+</div>
+
+<p align="center" >
+    Create Project
+</p>
+<div align="center">
+  <img src="img/img5.png">
+</div>
+
+<p align="center" >
+    Create Task
+</p>
+<div align="center">
+  <img src="img/img3.png">
+</div>
+
+
+
 The main functions that users can operate Use the login box to log in. After the login is completed, users can see the current number of tasks and the number of completed tasks in the summary card at the top. In the task list below, users can easily view the existing tasks. An introduction to the model used for their completion and provides buttons for editing and deleting. When the user needs to create a new task, they can click the red create button or the button to the right of the task list to create a new task.
 
 
@@ -130,7 +152,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is demo of how you can install and set up the app._
 
 1. Clone the repo
    ```sh
@@ -140,11 +162,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-3. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -152,8 +169,13 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Url for server: http://127.0.0.1:8000
+live demo: http://cnit581demo.jinwu.me/
+
+url for local server: http://127.0.0.1:8000
+
 Api of task: http://127.0.0.1:8000/myapp/task/
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
