@@ -246,8 +246,8 @@ Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github
 
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
 [Angular-url]: https://angular.io/
-[Material_Design]: https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSswahoeo_FEO542S5x_p-4mQ-IIORegdqf5ALnW82qQGLTnbvw
-[Material-url]: https://img.shields.io/badge/-Material%20Design-brightgreen
+[Material_Design]: https://img.shields.io/badge/-Material%20Design-brightgreen
+[Material-url]: https://m3.material.io/
 
 
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
