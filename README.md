@@ -33,11 +33,11 @@
     <a href="https://github.com/xiaojinwu/CNIT581_term_project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a>View Demo</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">View Demo</a>
     ·
-    <a>Report Bug</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">Report Bug</a>
     ·
-    <a>Request Feature</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">Request Feature</a>
   </p>
 </div>
 
@@ -84,7 +84,8 @@ The website provides a good authorization login interface so that users can ensu
   <img src="img/img1.png">
 </div>
 
-<br>
+<br />
+<br />
 
 <p align="center" >
     Create Project
@@ -93,7 +94,8 @@ The website provides a good authorization login interface so that users can ensu
   <img src="img/img5.png">
 </div>
 
-<br>
+<br />
+<br />
 
 <p align="center" >
     Create Task
