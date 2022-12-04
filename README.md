@@ -81,6 +81,8 @@ This project implements a basic task management view with a user authorization f
 The potential user groups are still the same users who need to use the visual algorithm as mentioned in the previous project, but at this stage the web page only provides users to create task models.
 The website provides a good authorization login interface so that users can ensure the privacy of their data to a certain extent.
 
+
+The main functions that users can operate Use the login box to log in. After the login is completed, users can see the current number of tasks and the number of completed tasks in the summary card at the top. In the task list below, users can easily view the existing tasks. An introduction to the model used for their completion and provides buttons for editing and deleting. When the user needs to create a new task, they can click the red create button or the button to the right of the task list to create a new task.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
