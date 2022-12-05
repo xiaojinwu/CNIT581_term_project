@@ -201,9 +201,9 @@ Distributed under the CNIT581 License.
 <!-- CONTACT -->
 ## Contact
 
-Jinwu Xiao - [xiao270@purdue.com](xiao270@purdue.com)
+Jinwu Xiao - [xiao270@purdue.edu](xiao270@purdue.edu)
 
-Hang Li - [li4016@purdue.com](li4016@purdue.com)
+Hang Li - [li4016@purdue.edu](li4016@purdue.edu)
 
 Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github.com/xiaojinwu/CNIT581_term_project)
 
