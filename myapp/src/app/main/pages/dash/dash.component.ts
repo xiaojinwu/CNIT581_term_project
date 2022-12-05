@@ -18,7 +18,7 @@ export class DashComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProjects();
-    this.http.get("http://127.0.0.1:8000/myapp/user").subscribe(result => {
+    this.http.get("http://cnit581demo.jinwu.me:8000/myapp/user").subscribe(result => {
       this.users = result as User[];
     })
 
@@ -29,7 +29,7 @@ export class DashComponent implements OnInit {
   }
 
   getProjects() {
-    this.http.get("http://127.0.0.1:8000/myapp/project/").subscribe(
+    this.http.get("http://cnit581demo.jinwu.me:8000/myapp/project/").subscribe(
       (data: any) => {
         this.projects = [];
         data.forEach((element: any) => {
@@ -45,14 +45,14 @@ export class DashComponent implements OnInit {
    this.getTasks();
   }
   deleteProject(id: number) {
-    this.http.delete("http://127.0.0.1:8000/myapp/project/" + id).subscribe(result => {
+    this.http.delete("http://cnit581demo.jinwu.me:8000/myapp/project/" + id).subscribe(result => {
       this.projects = this.projects.filter(p => p.id != id);
     });
   }
 
   // get task list from server
   getTasks() {
-    this.http.get("http://127.0.0.1:8000/myapp/task/get_tasks/?project_id=" + this.selected_proejct.id).subscribe(
+    this.http.get("http://cnit581demo.jinwu.me:8000/myapp/task/get_tasks/?project_id=" + this.selected_proejct.id).subscribe(
       (data: any) => {
         this.tasks = [];
         data.forEach((element: any) => {
@@ -78,7 +78,7 @@ export class DashComponent implements OnInit {
   }
 
   delete(id: number) {
-    this.http.delete("http://127.0.0.1:8000/myapp/task/" + id).subscribe(result => {
+    this.http.delete("http://cnit581demo.jinwu.me:8000/myapp/task/" + id).subscribe(result => {
       this.tasks = this.tasks.filter(task => task.id != id);
     });
   }
@@ -303,7 +303,7 @@ export class CreateTaskDialog {
 
   create() {
     this.task.project = this.project.id;
-    this.http.post("http://127.0.0.1:8000/myapp/task/", this.task).subscribe(result => {
+    this.http.post("http://cnit581demo.jinwu.me:8000/myapp/task/", this.task).subscribe(result => {
       console.log(result);
       this.dialogRef.close();
     }, error => {
@@ -369,7 +369,7 @@ export class EditTaskDialog {
 
   create() {
 
-    this.http.put("http://127.0.0.1:8000/myapp/task/" + this.task.id + '/', this.task).subscribe(result => {
+    this.http.put("http://cnit581demo.jinwu.me:8000/myapp/task/" + this.task.id + '/', this.task).subscribe(result => {
       console.log(result);
       this.dialogRef.close();
     }, error => {
@@ -438,12 +438,12 @@ export class CreateProjectDialog {
 
   }
   ngOnInit() {
-    this.http.get("http://127.0.0.1:8000/myapp/user").subscribe(result => {
+    this.http.get("http://cnit581demo.jinwu.me:8000/myapp/user").subscribe(result => {
       this.users = result as User[];
     })
   }
   create() {
-    this.http.post("http://127.0.0.1:8000/myapp/project/", this.project).subscribe(result => {
+    this.http.post("http://cnit581demo.jinwu.me:8000/myapp/project/", this.project).subscribe(result => {
       console.log(result);
       this.dialogRef.close();
     }, error => {

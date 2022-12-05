@@ -74,6 +74,7 @@ ROOT_URLCONF = 'backend.urls'
 CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = [
     r'http://localhost:4200',
+    r'http://cnit581demo.jinwu.me'
 ] 
  
  

@@ -20,10 +20,10 @@ export class AccountComponent implements OnInit {
 
   login() {
     console.log(this.model);
-    // request to server to generate and return a JWT http://127.0.0.1:8000/api-token-auth/
+    // request to server to generate and return a JWT http://cnit581demo.jinwu.me/api-token-auth/
     // store JWT in local storage
     // redirect to main page
-    this.http.post('http://127.0.0.1:8000/api-token-auth/', this.model).subscribe(
+    this.http.post('http://cnit581demo.jinwu.me:8000/api-token-auth/', this.model).subscribe(
       (data:any) => {
         console.log(data);
         if(data.token){
