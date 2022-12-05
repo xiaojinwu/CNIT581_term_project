@@ -25,20 +25,19 @@
 <br />
 <div align="center">
 
-
   <h3 align="center">CNIT581 Web Development</h3>
 
   <p align="center">
     Project
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/xiaojinwu/CNIT581_term_project">Request Feature</a>
   </p>
 </div>
 
@@ -62,11 +61,9 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#References">References</a></li>
   </ol>
 </details>
 
@@ -78,6 +75,35 @@
 This project implements a basic task management view with a user authorization framework. The website allows users to easily view and manage their tasks. The core functions of task management include viewing, editing, deleting, and creating tasks.
 The potential user groups are still the same users who need to use the visual algorithm as mentioned in the previous project, but at this stage the web page only provides users to create task models.
 The website provides a good authorization login interface so that users can ensure the privacy of their data to a certain extent.
+
+
+<p align="center" >
+    Login
+</p>
+<div align="center">
+  <img src="img/img1.png">
+</div>
+
+<br />
+<br />
+
+<p align="center" >
+    Create Project
+</p>
+<div align="center">
+  <img src="img/img5.png">
+</div>
+
+<br />
+<br />
+
+<p align="center" >
+    Create Task
+</p>
+<div align="center">
+  <img src="img/img3.png">
+</div>
+
 
 
 The main functions that users can operate Use the login box to log in. After the login is completed, users can see the current number of tasks and the number of completed tasks in the summary card at the top. In the task list below, users can easily view the existing tasks. An introduction to the model used for their completion and provides buttons for editing and deleting. When the user needs to create a new task, they can click the red create button or the button to the right of the task list to create a new task.
@@ -130,7 +156,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is demo of how you can install and set up the app._
 
 1. Clone the repo
    ```sh
@@ -140,11 +166,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm install
    ```
-3. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -152,8 +173,13 @@ _Below is an example of how you can instruct your audience on installing and set
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Url for server: http://127.0.0.1:8000
+live demo: http://cnit581demo.jinwu.me/
+
+url for local server: http://127.0.0.1:8000
+
 Api of task: http://127.0.0.1:8000/myapp/task/
+
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
