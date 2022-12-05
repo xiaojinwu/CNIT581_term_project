@@ -73,9 +73,16 @@
 ## About The Project
 
 This project implements a basic task management view with a user authorization framework. The website allows users to easily view and manage their tasks. The core functions of task management include viewing, editing, deleting, and creating tasks.
+<br />
+
 The potential user groups are still the same users who need to use the visual algorithm as mentioned in the previous project, but at this stage the web page only provides users to create task models.
 The website provides a good authorization login interface so that users can ensure the privacy of their data to a certain extent.
+<br />
 
+The intended audience of the platform can be divided into three types: 
+The first one is the engineering user. Engineering users are those who directly use various target detection models to detect video or images in their projects and want to get results. The focus of this group of users is on the use of the models and the acquisition of results.
+The second type of user is the model researcher, who can upload their own models for use by engineering users through the platform and get some benefits from engineering users whenever their models are used.
+The third type of user is project managers and collaborators.
 
 <p align="center" >
     Login
