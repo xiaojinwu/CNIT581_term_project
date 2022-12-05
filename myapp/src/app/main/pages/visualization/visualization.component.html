@@ -1,1 +1,23 @@
 <div id="cesiumContainer"></div>
+
+<!-- create a floating card on the left side -->
+<mat-card class="example-card" style="position: absolute; left: 15px; top: 90px; width: 20%; height: 800px; z-index: 1000; overflow:hidden; overflow-y:scroll;">
+  <mat-card-header>
+    <mat-card-title>Resource List</mat-card-title>
+  </mat-card-header>
+   
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let resource of resourcelist">
+        <h4 mat-line>{{resource.name}}</h4>
+        <p mat-line>{{resource.description}}</p>
+        <mat-chip-list mat-line size="small"  aria-label="developers">
+          <mat-chip size="small" color="primary" selected >{{resource.type}}</mat-chip>
+        </mat-chip-list>
+        <mat-action-list >
+          <button mat-button (click)="add(resource)" color="primary">Add</button>
+          <button mat-button (click)="remove(resource)" color="warn">Remove</button>
+        </mat-action-list>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
