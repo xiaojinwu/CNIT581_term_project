@@ -9,7 +9,7 @@ declare var Cesium: any;
 })
 export class VisualizationComponent implements OnInit {
   viewer: any;
-  token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI4MjBjM2NkZC1lYzdmLTQ2MGMtODRmMi04OGUzNjhmZDhhMzEiLCJpZCI6MTM5OTQsImlhdCI6MTYyMDk2Njk1NX0.h-5lN_C0xbyJ174AYESgah0ySi6NGaHA9vDxdpmPJak';
+  token='fill your token here';
   headers_object = new HttpHeaders();
   resourcelist:any;
   renderlist:any={}
@@ -18,9 +18,7 @@ export class VisualizationComponent implements OnInit {
     private http: HttpClient,
   ) { 
 
-      // add http authentication header
- this.headers_object.append('Authorization', 'Bearer ' + this.token);
- this.headers_object.append('Content-Type', 'application/json');
+ 
   }
 add(resource:any){
   const id=resource.id;

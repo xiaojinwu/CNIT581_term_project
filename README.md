@@ -104,12 +104,18 @@ The website provides a good authorization login interface so that users can ensu
   <img src="img/img3.png">
 </div>
 
+The main functions of the platform are divided into two parts. The first part is project task management, and the second part is visualization. In the project task management we designed the project entities for the user to easily implement the tasks in the hierarchy. The user can assign the corresponding developer to the project and the tasks to be performed. The visualization interface is mainly used to show the results of data processing.
 
 
-The main functions that users can operate Use the login box to log in. After the login is completed, users can see the current number of tasks and the number of completed tasks in the summary card at the top. In the task list below, users can easily view the existing tasks. An introduction to the model used for their completion and provides buttons for editing and deleting. When the user needs to create a new task, they can click the red create button or the button to the right of the task list to create a new task.
 
 
 <img src="img/img4.png">
+
+On the dashboard page we have designed a left and right column for a quick view of the tasks contained in the corresponding project, thus enabling an example of data interaction.The user can select the corresponding project by using the select button on the left side and the tasks under that project will be loaded automatically in the right-hand sub-bar.
+
+<img src="img/img_vis.png">
+
+In the visualization we have implemented the ability to access the list of resources from an external API and interact with the external SDK components provided by the Cesium ION API.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,12 +124,11 @@ The main functions that users can operate Use the login box to log in. After the
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
+* [[CesiumJS](https://cesium.com/cesiumjs/)]
+* [![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)](https://www.djangoproject.com/)
 * [![Material Design ][Material_Design]][Material-url]
-* [![React][React.js]][React-url]
 * [![Angular][Angular.io]][Angular-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,7 +146,7 @@ To get a local copy up and running follow these simple example steps.
 * Create a virtual Environment with python 3.9 in Anaconda.
 * npm
   ```sh
-  pip install djangorestframework django-cors-headers
+  pip install djangorestframework django-cors-headers django_api_admin
   ```
 * run server side
   ```sh
@@ -247,3 +252,9 @@ Project Link: [https://github.com/xiaojinwu/CNIT581_term_project](https://github
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+[Djiango]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green
+[Django-url]: https://www.djangoproject.com/
+
+[Cesium]: https://img.shields.io/badge/Cesium-092E20?style=for-the-badge&logo=cesium&logoColor=green
+[Cesium-url]: https://cesium.com/
